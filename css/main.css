@@ -1,0 +1,105 @@
+* {
+	 margin: 0px;
+	 border: 0px;
+}
+
+h1 {
+	font: bold 20px Georgia;
+}
+
+h2 {
+	font: bold 14px Georgia;
+}
+
+header,footer,section,article,nav,aside,hgroup{
+	display:block;
+}
+
+body{
+	width:100%;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+}
+
+#container{
+	max-width:1000px;
+	margin:20px 0px;
+	background-color:#AA2337;
+	display: -webkit-box;
+	-webkit-box-orient:vertical; /* vertical behaves similar to display block */
+	-webkit-box-flex:1; /* value 0 if the contained elements are of fixed size or 1 if sizes can vary depending on device used*/
+}
+
+#header {
+	padding: 20px;
+	background: #993344;
+	border: 3px solid #990000;
+	color: #FFF;
+}
+
+#header h1,.header h1 {
+	font: bold 28px Arial;
+	vertical-align: middle;
+	margin: 20px;
+}
+
+#header h1 sub,.header h1 sub {
+	font-size: 18px;
+	font-style: italics;
+}
+
+#contentMenu,.contentMenu {
+	background: #660033;
+	color:#FFF;
+}
+
+#contentMenu li,.contentMenu li{
+	display:inline-block;
+	list-style:none;
+	padding: 5px;
+	font: bold 14px Georgia;
+}
+
+#main_content{
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+}
+
+/* rounded corner css3 */
+
+.rounded_box {
+	border-radius: 30px; 
+	padding:30px;
+	-moz-border-radius: 30px; 
+	-webkit-border-radius: 30px; 
+	border: 5px solid #990000;
+	background-color:#FF9999;
+}
+
+/* end rounded corner css3 */
+
+
+#main_section{
+	-webkit-box-flex:1;
+	margin:20px;
+	padding: 20px;
+	border: 1px solid blue;
+}
+
+article {
+	padding: 20px;
+	margin-bottom:15px;
+}
+
+#side_section {
+	border: 1px solid green;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+}
+
+#page_footer,.footer {
+	text-align:center;
+	padding: 20px;
+	border-top: 2px solid #990000;
+}
