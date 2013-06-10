@@ -1,0 +1,359 @@
+/* Border colour : #251E85, Background general colour: #E1E6ED; content bg : #B1A9FC */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Georgia;
+}
+
+body {
+	position:absolute;
+	padding: 0px;
+	margin: 0px;
+	border:none;
+	height auto !important;
+	height:100%;
+	min-height:100%;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	bottom:0;
+	top:0;
+	left:0;
+        right:0;
+	width:100%;
+	color: #380000;
+	text-align: center;
+	background-color:#6666FF
+}
+
+h1 {
+	font: bold 20px Georgia;
+	margin-bottom:12px;
+}
+
+h2 {
+	font: bold 14px Georgia;
+	margin-bottom:8px;
+}
+
+table td,table th {
+	padding: 5px;
+}
+
+#container,.container {
+	/*background-image:url("../images/bodybackground.jpg");*/
+	background-color: #000000;
+	background-repeat:repeat;
+	font-family: Georgia;
+	margin: 0px auto;
+	padding:10px;
+	height:100%;
+	width: 1000px;
+	text-align:left;
+}
+
+
+header,footer,section,nav,aside,hgroup,article{
+	display: block;
+}
+
+
+#header,.header {
+	//background-image:url("../images/headerBackground.jpg");
+	background-color: #000000;
+	background-repeat:repeat;
+	color:#FFF;
+	vertical-align:bottom;
+	padding: 2px;
+	text-align: center;
+	border-bottom: 5px solid #FFF;
+	margin-bottom: 5px;
+}
+
+#header h1,.header h1 {
+	font-size: 28px;
+	font-family: Arial;
+	vertical-align: middle;
+	display:block;
+	margin: 20px;
+}
+
+#header h1 sub,.header h1 sub {
+	font-size: 18px;
+	font-style: italics;
+}
+
+#contentMenu,.contentMenu {
+	background: #323232;
+	color:#FFF;
+	clear: both;
+	overflow:hidden;
+}
+
+#contentMenu li,.contentMenu li{
+	display:inline-block;
+	list-style:none;
+	padding: 5px;
+	font: bold 14px Georgia;
+}
+
+#contentMenu .menuButton,.contentMenu .menuButton {
+	//background-image:url("../images/menuButtonImage.png");
+	//background-repeat:repeat;
+	background-color:#ADADAD;
+	height: 20px;
+	padding: 4px 8px;
+	margin: 4px;
+	float:left;
+	display:block;
+	color: #000;
+}
+
+#main_section,.mainContent {
+	float:left;
+	width: 100%;
+	padding-top: 2px;
+}
+
+.content_section {
+	padding:1px;
+	margin:2px;
+	width:49%;
+	display:inline-block;
+}
+
+.roundedBox {
+	margin: 0 10px 0 10px;
+}
+
+#side_section {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+}
+
+#page_footer,.footer {
+	clear:both;
+	text-align:center;
+	padding: 20px;
+	border-top: 2px solid #990000;
+	color:#FFF;
+}
+
+/* Start: Lightbox css */
+.backdrop
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity: .0;
+	filter:alpha(opacity=0);
+	z-index:50;
+	display:none;
+}
+
+
+.box
+{
+	position:absolute;
+	left:25%;
+	top:20%;
+	width:650px;
+	height:auto;
+	/*background:#ffffff;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:0px 0px 5px #444444;
+	-webkit-box-shadow:0px 0px 5px #444444;
+	box-shadow:0px 0px 5px #444444; */
+	z-index:51;
+	display:none;
+}
+
+.close
+{
+	float:right;
+	margin-right:35px;
+	margin-top:20px;
+	cursor:pointer;
+} 
+/*end of lightbox css */
+
+.lightboxlink{
+	height:100px;	
+}
+
+#academic {
+	background-image: url("../images/icons/academia_icon.png");
+}
+
+#objective{
+	background-image: url("../images/icons/objective_icon.png");
+}
+
+#experience{
+	background-image: url("../images/icons/experience_icon.png");
+}
+
+#expertise{
+	background-image: url("../images/icons/expertise_icon.png");
+}
+
+#knowledge{
+	background-image: url("../images/icons/knowledge_icon.png");
+}
+
+#softskills{
+	background-image: url("../images/icons/softskills_icon.png");
+}
+
+#achievements{
+	background-image: url("../images/icons/achievements_icon.png");
+}
+
+.code_red .lightboxlink{
+	background-color: #FFD2BF;
+}
+
+.code_blue .lightboxlink{
+	background-color: #C6C7F7;
+}
+
+.code_green .lightboxlink{
+	background-color: #B2F7A8;
+}
+
+.code_yellow .lightboxlink{
+	background-color: #F7F78D;
+}
+
+.code_orange .lightboxlink{
+	background-color: #F7D185;
+}
+
+.code_violet .lightboxlink{
+	background-color: #E9C8F7;
+}
+
+.code_pink .lightboxlink{
+	background-color: #F77CEF;
+}
+
+.lightboxlink {
+	background-repeat:no-repeat;
+	background-position:top 8px left 8px;
+	padding-left:54px;
+	padding-top: 10px;
+	cursor: pointer;
+}
+
+.lightboxlink p{
+	padding: 20px 15px;
+}
+
+#objective_text,#academic_text,#experience_text,#expertise_text,#knowledge_text,#softskills_text,#achievements_text,#declaration_text{
+	display:none;
+}
+
+.section_content {
+	text-align: left;
+}
+
+.section_content th{
+	border-bottom: 1px solid #000;
+}
+
+.exp_sub_section,.box_sub_section {
+	display: none;
+}
+
+.button_section {
+	display: block;
+	clear: both;
+}
+
+.next, .prev {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3px 15px;
+	text-decoration: none;
+	cursor: pointer;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.next {
+	float: right;
+}
+
+.prev {
+	float: left;
+}
+
+.home_icon {
+	float: left;
+	height: 80px;
+	width: 80px;
+}
+
+.menuLink {
+	float: right;
+}
+
+.menuLink ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menuLink ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+.menuLink li ul {
+    display: none;
+}
+.menuLink ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px 5px 15px;
+    margin-left: 1px;
+    white-space: nowrap;
+    width: 100px;
+}
+
+.menuLink ul li ul li a {
+    border-top: 1px solid #ffffff;
+}
+
+.menuLink ul li a:hover img {
+	border: 1px solid #FFF;
+	border-bottom: none;
+	border-radius: 5px;
+}
+
+.menuLink ul li a:hover {
+	background-color: #000;
+}
+
+.menuLink li:hover ul {
+    display: block;
+    position: absolute;
+}
+.menuLink li:hover li {
+    float: none;
+    font-size: 11px;
+}
+.menuLink li:hover ul li a { background: #3b3b3b; }
+.menuLink li:hover li a:hover {
+    background: #1e7c9a;
+}
