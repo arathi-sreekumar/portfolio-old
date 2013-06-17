@@ -1,4 +1,3 @@
-
 var sub_section_index = 0;
 $(document).ready(function(){
 
