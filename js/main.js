@@ -1,4 +1,3 @@
-
 var sub_section_index = 0;
 $(document).ready(function(){
 
@@ -124,6 +123,17 @@ $(document).ready(function(){
 	});
 
 });
+
+/* function to change the theme */
+function changeTheme(template_color){
+	if (template_color == "red"){
+		$(document.body).removeClass('blue');
+		$(document.body).addClass('red');
+	} else {
+		$(document.body).removeClass('red');
+		$(document.body).addClass('blue');
+	}
+}
 
 /* funtion to navigate contents within light box  */
 function previousSubContent(){
