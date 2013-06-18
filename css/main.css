@@ -341,6 +341,22 @@ body.red .left_menu .selectOption {
 	overflow: hidden;
 }
 
+body.blue .main_content a:link, body.blue .main_content a:visited {
+	color: #000080;
+}
+
+body.blue .main_content a:hover, body.blue .main_content a:active{
+	color: #1E90FF;
+}
+
+body.red .main_content a:link, body.red .main_content a:visited {
+	color: #800000;
+}
+
+body.red .main_content a:hover, body.red .main_content a:active{
+	color: #FF0000;
+}
+
 .section_content {
 	text-align: left;
 }
