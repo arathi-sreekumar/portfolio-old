@@ -106,6 +106,7 @@ body.red #header, body.red .header{
 	background-color: #660000;
 	background-repeat:repeat;
 	color:#FFF;
+	overflow: visible;
 }
 
 #header h1,.header h1 {
@@ -114,6 +115,8 @@ body.red #header, body.red .header{
 	vertical-align: middle;
 	display:block;
 	margin: 20px;
+	*margin-top: 5px;
+	*margin-bottom: 20px;
 }
 
 #header h1 sub,.header h1 sub {
@@ -121,8 +124,9 @@ body.red #header, body.red .header{
 	font-style: italics;
 }
 
-header img {
-	padding: 10px 0px 5px 0px;
+#header img {
+	margin-top:5px;
+	padding: 5px 0px 5px 0px;
 }
 
 .footer {
@@ -210,9 +214,18 @@ body.red .footer .githubLink{
     display: block;
     position: relative;
     float: left;
+    min-height:0px;
+    overflow: visible;
 }
-.menuLink li ul {
+.menuLink ul li ul {
     display: none;
+    overflow:visible;
+}
+.menuLink ul li ul li {
+	display:inline-block;
+	width:100%;
+    float: none;
+    font-size: 70%;
 }
 .menuLink ul li a {
     display: block;
@@ -225,6 +238,7 @@ body.red .footer .githubLink{
 }
 
 .menuLink ul li ul li a {
+	display:block;
     border-top: 1px solid #ffffff;
 }
 
@@ -238,11 +252,13 @@ body.red .footer .githubLink{
 	background-color: #CC0000;
 }
 
-.menuLink li:hover ul {
+.menuLink ul li:hover ul {
     display: block;
     position: absolute;
+    overflow-y:visible;
+    width: 100%;
 }
-.menuLink li:hover li {
+.menuLink li:hover ul li {
     float: none;
     font-size: 70%;
 }
@@ -260,6 +276,7 @@ body.red .footer .githubLink{
 .content{
 	padding: 10px 10px 5px;
 	min-height: 68%;
+	*min-height:65%;
 	background-color: #FFF;
 }
 
@@ -268,6 +285,7 @@ body.red .footer .githubLink{
 	min-height:100%;
 	display: inline-block;
 	vertical-align: top;
+	float:left;
 }
 
 .left_menu .menu_option{
@@ -283,14 +301,14 @@ body.blue .left_menu .menu_option{
 }
 
 body.red .left_menu .menu_option{
-	background-color: #FFE4E1;
-	color: #800000;
+	background-color: #666666;
+	color: #FFFFFF;
 }
 
 .left_menu .menu_option span {
 	position:absolute;
 	top:0; left:0; bottom:0; right:0;
-	margin:auto;
+	margin:15px auto;
 	height: 20px;
 	padding-left: 5%;
 }
@@ -313,7 +331,9 @@ body.red .left_menu .selectOption {
 	width:79%;
 	min-height:100%;
 	display: inline-block;
-	margin: 10px 0px;
+	margin: 5px 0px;
+	float:left;
+	overflow: hidden;
 }
 
 .section_content {
@@ -477,11 +497,11 @@ body.red .profile_nav,body.red .company_nav {
 	width:49.8%;
 }
 
-.profile_nav:first-child,.company_nav:first-child {
+.profile_nav:first-child,.company_nav:first-child,.company_nav.firstChild{
 	margin-left: 0px;
 }
 
-.profile_nav:last-child,.company_nav:last-child {
+.profile_nav:last-child,.company_nav:last-child,.company_nav.lastChild{
 	margin-right: 0px;
 }
 
@@ -521,6 +541,8 @@ body.red .rounded_box table {
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#EEEEEE')
+             progid:DXImageTransform.Microsoft.Shadow(color='#EFEFEF', Direction=45, Strength=4);
 }
 .shadowEffect:before, .shadowEffect:after
 {
