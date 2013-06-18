@@ -327,6 +327,11 @@ body.red .left_menu .selectOption {
 	background: url("../img/icons/right-arrow.png") no-repeat top right 5px;
 }
 
+.ie7 .left_menu .selectOption span,.ie8 .left_menu .selectOption span {
+	background: url("../img/icons/right-arrow.png") no-repeat top right;
+	margin-right:5px;
+}
+
 .main_content{
 	width:79%;
 	min-height:100%;
