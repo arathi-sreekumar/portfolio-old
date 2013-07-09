@@ -1,3 +1,4 @@
+
 var sub_section_index = 0;
 $(document).ready(function(){
 
@@ -17,7 +18,9 @@ $(document).ready(function(){
 	selectLeftMenu(section_name);
 	changeBoxContent(content_index,section_name);	
 
-	$(".menu_option").click(function(){
+	$(".menu_option").click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		content_index = 0;
 		var menuId  = $(this).attr('id');
 		section_name = menuId.split("_")[0];
@@ -27,18 +30,17 @@ $(document).ready(function(){
 	});
 
 	/* light box display function  */
-	$('.lightboxlink').click(function(){
+	$('.lightboxlink').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		var contentbox_id  = "#"+$(this).attr('id')+"_text";
 		var current_id = "#" + $(this).attr('id');
 		var nav_class = "." + section_name + "_nav";
-		var colour = $(this).attr('colour_code');
+		var colour = $(this).data('colourCode');
 		isLightBoxOpen = true;
-		if($('body').attr('name') == 'html5') {
-			set_rounded_content_html5(contentbox_id,colour);
-		}
-		else {
-			set_rounded_content(contentbox_id,colour,section_name);
-		}
+			
+		set_rounded_content(contentbox_id,colour,section_name);
+
 		$('.current_nav').removeClass('current_nav')
 		$(this).parent().addClass('current_nav');
 		content_index = getIndex(nav_class,current_id);
