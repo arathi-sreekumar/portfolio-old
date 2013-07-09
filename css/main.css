@@ -29,16 +29,25 @@ body {
 	font-size: 100%;
 }
 
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0;
+}
+
 body.blue {
 	background-image: url("../img/bg_body_blue.png");
+	background-repeat: repeat;
 	color: #FFF;
 	background-color:#CCF;
 }
 
 body.red {
 	background-image: url("../img/bg_body_black.png");
+	background-repeat: repeat;
 	color: #FFF;
-	background-color:#FCC;
+	background-color:#111111;
 }
 
 body.red article a{
@@ -50,11 +59,22 @@ body.red article a:hover{
 }
 
 h1 {
-	font: bold 140% Georgia;
+	font: bold 200% Georgia;
 	margin-bottom:12px;
 }
 
 h2 {
+	font: bold 140% Georgia;
+	margin-bottom:12px;
+	text-align:left;
+}
+
+caption h2 {
+	margin-bottom: 0px;
+	padding-bottom: 12px;
+}
+
+h3 {
 	font: bold 100% Georgia;
 	margin:8px 0px;
 }
@@ -94,6 +114,11 @@ a img {
 	margin: 0px 10px;
 }
 
+#header img{
+	height:50px;
+	width:50px;
+}
+
 body.blue #header, body.blue .header{
 	background-image:url("../img/bg_header_blue.png");
 	background-color: #00008B;
@@ -121,7 +146,6 @@ body.red #header, body.red .header{
 
 #header h1 sub,.header h1 sub {
 	font-size: 60%;
-	font-style: italics;
 }
 
 #header img {
@@ -273,11 +297,28 @@ body.red .footer .githubLink{
 }
 /* End - Menu dropdown on header */
 
+
+ .nav_bar, .left_menu {
+ 	list-style-type: none;
+ }
+
+ .nav_bar a {
+ 	text-decoration: none;
+ }
+
+.nav_bar a:link,
+.nav_bar a:visited,
+.nav_bar a:hover,
+.nav_bar a:focus,
+.nav_bar a:active {
+	color:#FFFFFF;
+}
+
 .content{
 	padding: 10px 10px 5px;
 	min-height: 68%;
 	*min-height:65%;
-	background-color: #FFF;
+	background-color: #FFFFFF;
 }
 
 .left_menu {
@@ -305,7 +346,35 @@ body.red .left_menu .menu_option{
 	color: #FFFFFF;
 }
 
-.left_menu .menu_option span {
+body.blue .left_menu .menu_option a, 
+body.blue .left_menu .menu_option a:hover, 
+body.blue .left_menu .menu_option a:visited, 
+body.blue .left_menu .menu_option a:link, 
+body.blue .left_menu .menu_option a:focus, 
+body.blue .left_menu .menu_option a:active {
+	color: #000080;
+}
+
+body.red .left_menu .menu_option a, 
+body.red .left_menu .menu_option a:hover, 
+body.red .left_menu .menu_option a:visited, 
+body.red .left_menu .menu_option a:link, 
+body.red .left_menu .menu_option a:focus, 
+body.red .left_menu .menu_option a:active {
+	color: #FFFFFF;
+}
+
+body.blue .left_menu .selectOption a,
+body.blue .left_menu .selectOption a:hover,
+body.blue .left_menu .selectOption a:visited,
+body.blue .left_menu .selectOption a:link,
+body.blue .left_menu .selectOption a:focus,
+body.blue .left_menu .selectOption a:active {
+	color: #FFFFFF;
+}
+
+.left_menu .menu_option a {
+	text-decoration: none;
 	position:absolute;
 	top:0; left:0; bottom:0; right:0;
 	margin:15px auto;
@@ -323,11 +392,11 @@ body.red .left_menu .selectOption {
 	color: #FFF;
 }
 
-.left_menu .selectOption span {
+.left_menu .selectOption a {
 	background: url("../img/icons/right-arrow.png") no-repeat top right 5px;
 }
 
-.ie7 .left_menu .selectOption span,.ie8 .left_menu .selectOption span {
+.ie7 .left_menu .selectOption a,.ie8 .left_menu .selectOption a {
 	background: url("../img/icons/right-arrow.png") no-repeat top right;
 	margin-right:5px;
 }
@@ -498,8 +567,8 @@ img.logo{
 	border: 0px;
 	margin: 0 0.1% 0 0.1%;
 	font-size: 70%;
-	font-weight: 1px;
 	width: 14.1%;
+	float: left;
 }
 
 body.blue .profile_nav,body.blue .company_nav {
@@ -549,12 +618,17 @@ body.red .current_nav {
 }
 
 body.blue .rounded_box table {
-	border-color: #8db6cd;
+	border:1px solid #8db6cd;
 }
 
 body.red .rounded_box table {
-	border-color: #cdb68d;
+	border:1px solid #cdb68d;
 }
+
+body.blue .rounded_box table.noBorder, body.red .rounded_box table.noBorder {
+	border: 0;
+}
+
 
 .shadowEffect
 {
@@ -563,9 +637,11 @@ body.red .rounded_box table {
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
 .ie7 .shadowEffect,.ie8 .shadowEffect{
 	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#EEEEEE') progid:DXImageTransform.Microsoft.Shadow(color='#EFEFEF', Direction=45, Strength=4);
 }
+
 .shadowEffect:before, .shadowEffect:after
 {
 	content:"";
@@ -597,6 +673,6 @@ p.paragraph {
 	text-indent: 1.5em;
 }
 
-h1 a{
+h1 a, h2 a{
 	text-decoration: none;
 }
