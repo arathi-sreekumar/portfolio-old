@@ -72,6 +72,7 @@ table td,table th {
 	padding:0px;
 	height: 100%;
 	width: 80%;
+	min-width: 980px;
 	text-align:left;
 	font-size: 100%;
 }
@@ -425,6 +426,12 @@ body.red .section_content th{
 	width:100%;
 	display: inline-block;
 	margin:0px;
+	box-sizing: border-box;
+}
+
+.company_nav .lightboxlink {
+	padding-left: 0;
+	font-size: 18px;
 }
 
 .profile_article,.company_article {
@@ -474,7 +481,8 @@ body.red .profile_nav,body.red .company_nav {
 }
 
 .company_nav {
-	width:49.8%;
+	width:33.2%;
+	text-align: center;
 }
 
 .profile_nav:first-child,.company_nav:first-child {
@@ -555,4 +563,12 @@ p.paragraph {
 
 h1 a{
 	text-decoration: none;
+}
+
+@media (max-width: 980px) {
+
+}
+
+@media (max-width: 480px) {
+	
 }
