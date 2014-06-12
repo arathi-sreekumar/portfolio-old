@@ -1,0 +1,13 @@
+{
+  "name": "grunt-test",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-nodeunit": "~0.2.1",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-less": "v0.11.1"
+  }
+}
