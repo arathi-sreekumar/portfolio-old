@@ -187,8 +187,8 @@ body.blue .rounded_box{
 }
 
 body.red .rounded_box{
-	color: #800000;
-	background-color: #FFF;
+	color: #FEFDDE;
+	background-color: #181818;
 }
 
 .red_rounded_box {

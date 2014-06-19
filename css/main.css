@@ -1,5 +1,6 @@
 /* ===== variables  ===== */
 /* basic */
+/* dark blog */
 /* end basic */
 /* ==== end variables section ==== */
 /* base css */
@@ -64,7 +65,8 @@ a img {
   border: 0px;
   margin: 0px auto;
   padding: 0px;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   width: 80%;
   min-width: 980px;
   text-align: left;
@@ -112,7 +114,7 @@ p.paragraph {
 /* ==== end left menu section css ==== */
 .main_content {
   width: 79%;
-  min-height: 100%;
+  min-height: 350px;
   display: inline-block;
   margin: 10px 0px;
 }
@@ -194,7 +196,7 @@ header img {
   border-top: 1px solid #ffffff;
 }
 .menuLink li:hover {
-  background: #660000;
+  border: 1px solid #575157;
 }
 .menuLink li:hover ul {
   display: block;
@@ -204,17 +206,11 @@ header img {
   float: none;
   font-size: 70%;
 }
-.menuLink li:hover li.red a {
-  background: #660000;
+.menuLink li:hover li a {
+  background: #575157;
 }
-.menuLink li:hover li.red a:hover {
-  background: #CC0000;
-}
-.menuLink li:hover li.blue a {
-  background: #000080;
-}
-.menuLink li:hover li.blue a:hover {
-  background: #1E90FF;
+.menuLink li:hover li a:hover {
+  background: #1c0b2b;
 }
 /* End - Menu dropdown on header */
 /* === end header section css ==== */
@@ -241,60 +237,71 @@ header img {
 /* ==== end footer section css ==== */
 /* ====== css for red hued template ============ */
 body.red {
-  background-image: url("../img/bg_body_black.png");
-  color: #ffffff;
-  background-color: #0a050a;
+  color: #1e274d;
+  background-color: #cccfd0;
+}
+body.red .wrapper,
+body.red .content,
+body.red #footer,
+body.red .footer {
+  background: #080809;
+}
+body.red .wrapper {
+  border-left: 5px solid #3e3868;
+  border-right: 5px solid #3e3868;
 }
 body.red article a {
-  color: #BD0000;
+  color: #595098;
 }
 body.red article a:hover {
-  color: #FF0000;
+  color: #908aaf;
 }
 body.red #header,
 body.red .header {
-  background-image: url("../img/bg_header_red.png");
-  background-color: #660000;
+  background-color: #080809;
   background-repeat: repeat;
-  color: #FFF;
+  color: #fefdde;
+  border-color: #080809;
 }
 body.red .footer {
-  border-top: 2px solid #8D0000;
+  border-top: 2px solid #3e3868;
 }
 body.red .footer .linkedInLink {
-  background: url("../img/icons/linkedIn_icon_red.png");
+  background: url("../img/icons/linkedIn_icon_blue.png");
 }
 body.red .footer .twitterLink {
-  background: url("../img/icons/twitter_icon_red.png");
+  background: url("../img/icons/twitter_icon_blue.png");
 }
 body.red .footer .monsterLink {
-  background: url("../img/icons/monster_icon_red.png");
+  background: url("../img/icons/monster_icon_blue.png");
 }
 body.red .footer .githubLink {
-  background: url("../img/icons/github_icon_red.png");
+  background: url("../img/icons/github_icon_blue.png");
 }
 body.red .left_menu .selectOption {
-  background-color: #CC0000;
-  color: #FFF;
+  background-color: #908aaf;
+  color: #fefdde;
 }
 body.red .left_menu .menu_option {
-  background-color: #FFE4E1;
-  color: #800000;
+  background-color: #595098;
+  color: #fefdde;
 }
 body.red .section_content th {
-  border-bottom: 1px solid #800000;
+  border-bottom: 1px solid #3e3868;
+}
+body.red .nav_bar {
+  background-color: #1c0b2b;
 }
 body.red .profile_nav,
 body.red .company_nav {
-  background-color: #660000;
-  border-color: #FFF;
-  color: #FEE;
+  background-color: #3e3868;
+  color: #fefdde;
 }
 body.red .current_nav {
-  background-color: #CC0000;
+  background-color: #908aaf;
 }
 body.red .rounded_box table {
-  border-color: #cdb68d;
+  border-color: #fefdde;
 }
 /* ====== end css for red hued template ========== */
 /* ====== css for blue hued template ============ */
@@ -550,5 +557,11 @@ img.logo {
   .main_content,
   .left_menu {
     width: 100%;
+  }
+}
+@media (max-height: 500px) {
+  .main_content {
+    height: auto;
+    min-height: initial;
   }
 }
