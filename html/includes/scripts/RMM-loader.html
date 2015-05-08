@@ -1,0 +1,29 @@
+
+<script type="text/javascript">
+  window.onload = function () {
+      function loadScript(url, callback){
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.defer = "defer";
+          if (url.substr(url.lastIndexOf('/') + 1)==="require.js") {   //only for require
+              script.setAttribute("data-main","js/config.js");
+          }
+          if (script.readyState){ //IE
+              script.onreadystatechange = function(){
+                  if (script.readyState == "loaded" || script.readyState == "complete"){
+                      script.onreadystatechange = null;
+                      if (callback) { callback(); }
+                  }
+                  else { //Others
+                      script.onload = function() {
+                          if (callback) { callback(); }
+                      };
+                  }
+              };
+          }
+          script.src = url;
+          document.getElementsByTagName("body")[0].appendChild(script);
+      }
+  };
+  loadScript('js/vendor/require.js');
+</script>

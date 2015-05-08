@@ -1,0 +1,30 @@
+doctype html
+
+//[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]
+//[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]
+//[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]
+//[if gt IE 8]>	<!--> <html class="no-js"> <!--<![endif]
+
+include ../includes/htmlheads/html-header
+
+body.tab-acc-min.tabs.tab-block.js-tab-block
+
+    include ../includes/headers/header-1
+
+    include ../includes/navs/nav
+
+    .container
+
+        #main.padded.clearfix(tabindex=0)
+
+            include ../includes/pages/profile
+            include ../includes/pages/professional
+            include ../includes/pages/education
+            include ../includes/pages/projects
+
+    include ../includes/footers/footer
+
+    include ../includes/scripts.jade
+
+|</html>
+

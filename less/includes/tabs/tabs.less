@@ -1,0 +1,42 @@
+/* =============== TAB BLOCK ================== */
+.tab-list {
+    list-style: none;
+
+    li {
+        list-style: none;
+    }
+}
+.tab-styled {
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+        padding-right: 2px;
+    }
+    a {
+        border-radius: 2px 2px 0 0;
+        padding: 6px 8px;
+        background: #E0E3E4;
+        display: block;
+        font-weight: bold;
+    }
+    .tab-selected {
+        background: @selected-tab-color;
+        color: #FFF;
+    }
+}
+.tab-content {
+    display: none;
+
+    &.tab-content-selected {
+        display: block;
+    }
+}
+
+.sub-tab-content {
+    display: none;
+
+    &.sub-tab-content-selected {
+        display: block;
+    }
+}

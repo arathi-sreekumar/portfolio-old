@@ -1,0 +1,40 @@
+.sidebar {
+    &.tab-list {
+        border-bottom: 1px solid black;
+    }
+    a {
+        display: block;
+        padding: 7px 10px;
+        background-color: #FCF5EA;
+        border: 1px solid black;
+        border-bottom: 2px solid black;
+        color: black;
+
+        &.sub-tab-selected {
+            background-color: #E39140;
+            position: relative;
+            border-left: 0;
+            &:before {
+                content: '';
+                border-left: 20px solid transparent;
+                border-right: 20px solid #E39140;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                position: absolute;
+                left: -39px;
+                top: -1px;
+                z-index: 1;
+            }
+            &:after {
+                content: '';
+                border-left: 22px solid transparent;
+                border-right: 22px solid black;
+                border-top: 22px solid transparent;
+                border-bottom: 22px solid transparent;
+                position: absolute;
+                left: -43px;
+                top: -2px;
+            }
+        }
+    }
+}

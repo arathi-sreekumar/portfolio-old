@@ -1,0 +1,41 @@
+doctype html
+
+//[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]
+//[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]
+//[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]
+//[if gt IE 8]>    <!--> <html class="no-js"> <!--<![endif]
+
+include ../includes/htmlheads/head1-standart
+
+body
+    header.block
+        .container
+            |This is header
+    .container
+
+        #main.padded
+
+            include ../includes/layouts/block-2col-11
+
+            include ../includes/layouts/block-2col-12
+
+            include ../includes/layouts/block-2col-13
+
+            include ../includes/layouts/block-2col-31
+
+            include ../includes/layouts/block-2col-custom
+
+            include ../includes/layouts/block-3col-111
+
+            include ../includes/layouts/block-3col-121
+
+            include ../includes/layouts/block-4col-1111
+
+    footer.block
+        .container
+            | This is footer
+
+    include ../includes/scripts.jade
+
+|</html>
+

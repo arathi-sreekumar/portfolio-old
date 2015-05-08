@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]-->
+<!-- [if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]-->
+<!-- [if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<!-- [if gt IE 8]>	<!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- We use fontawesome for the display of icons-->
+  <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lte IE 7]><link href="css/font-awesome-ie7.min.css" rel="stylesheet" /><![endif]-->
+  <link rel="stylesheet" href="css/less.css">
+  <!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+  <div style="height:10px; width: 0; background: #4C9ED9;" class="load-progress"></div>
+  <script src="js/load-progress.js?__inline=true"></script>
+  <nav id="nav" tabindex="0" class="nav nav-1">
+    <div class="container">
+      <ul class="block">
+        <!--Add selected class if you want to display the nav for the current page as selected 
+        -->
+        <li class="nav-item selected"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Journals</a></li>
+        <li class="nav-item"><a href="#">Collections</a></li>
+        <li class="nav-item"><a href="#">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="nav" tabindex="0" class="nav nav-1">
+    <div class="container">
+      <ul class="block">
+        <!--Add selected class if you want to display the nav for the current page as selected 
+        -->
+        <li class="nav-item selected"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Journals</a></li>
+        <li class="nav-item"><a href="#">Collections</a></li>
+        <li class="nav-item"><a href="#">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="nav" tabindex="0" class="nav nav-2">
+    <div class="container block">
+      <ul class="nav-item nav-main">
+        <!--Add selected class if you want to display the nav for the current page as selected 
+        -->
+        <li class="nav-item selected"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Collections</a></li>
+        <li class="nav-item"><a href="#">Publications</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+      </ul>
+      <ul class="nav-item nav-sp-side nav-sub">
+        <li><a href="#" class="nav-sub-link">My Account</a><a href="#" class="nav-sub-link">View basket</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="main" class="padded">
+      <div class="breadcrumb-1 breadcrumbs block"><a href="#" title="breadcrumb">Home </a>> <a href="#" title="breadcrumb">Search Result </a>> <span title="breadcrumb" class="current">Lorem ipsum </span></div>
+      <div class="block">
+        <div class="main col">test data</div>
+        <div class="sidebar col">
+          <section class="toc-1 toc">
+            <header tabindex="0" class="toggle-handle js-toggle-handle">
+              <h1>Table of contents<i role="presentation" class="icon icon-clear icon-chevron-up icon-right"></i></h1>
+            </header>
+            <ul style="display: block;" class="toggle-section">
+              <!--Loop over chapters for li elements 
+              -->
+              <li><a href="#" class="js-chapter-toggle"><i class="icon icon-plus"></i>Chapter one<span class="visuallyhidden"><span class="toggle-text-handle">Show </span><span class="toggle-text-handle toggle-text-hide">Hide</span>sub sections</span></a>
+                <!--if there are sub sections then (freemarker condition) 
+                -->
+                <ul style="display: none;" class="toggle-section">
+                  <!--Loop over sections to display this 
+                  -->
+                  <li><a href="#section1">Section one </a></li>
+                  <li><a href="#section2">Section two </a></li>
+                  <li><a href="#section3">Section three </a></li>
+                </ul>
+              </li>
+              <!--Delete all li below once loop is implemented 
+              -->
+              <li><a href="#" class="js-chapter-toggle"><i class="icon icon-plus"></i>Chapter two<span class="visuallyhidden"><span class="toggle-text-handle">Show </span><span class="toggle-text-handle toggle-text-hide">Hide</span>sub sections</span></a>
+                <!--if there are sub sections then (freemarker condition) 
+                -->
+                <ul style="display: none;" class="toggle-section">
+                  <!--Loop over sections to display this 
+                  -->
+                  <li><a href="#section1">Section one </a></li>
+                  <li><a href="#section2">Section two </a></li>
+                  <li><a href="#section3">Section three </a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="js-chapter-toggle"><i class="icon icon-plus"></i>Chapter three<span class="visuallyhidden"><span class="toggle-text-handle">Show </span><span class="toggle-text-handle toggle-text-hide">Hide</span>sub sections</span></a>
+                <!--if there are sub sections then (freemarker condition) 
+                -->
+                <ul style="display: none;" class="toggle-section">
+                  <!--Loop over sections to display this 
+                  -->
+                  <li><a href="#section1">Section one </a></li>
+                  <li><a href="#section2">Section two </a></li>
+                  <li><a href="#section3">Section three </a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="js-chapter-toggle"><i class="icon icon-plus"></i>Chapter four<span class="visuallyhidden"><span class="toggle-text-handle">Show </span><span class="toggle-text-handle toggle-text-hide">Hide</span>sub sections</span></a>
+                <!--if there are sub sections then (freemarker condition) 
+                -->
+                <ul style="display: none;" class="toggle-section">
+                  <!--Loop over sections to display this 
+                  -->
+                  <li><a href="#section1">Section one </a></li>
+                  <li><a href="#section2">Section two </a></li>
+                  <li><a href="#section3">Section three </a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- 2 column equal width-->
+      <div class="block">
+        <div class="col-1by2 col">column 1 of 2</div>
+        <div class="col-1by2 col">column 2 of 2</div>
+      </div>
+      <!-- 2 Columns 3/4 and 1/4 widths for sidebar and main section-->
+      <div class="block">
+        <div class="col-3by4 col">column 1 of 2</div>
+        <div class="col-1by4 col">column 2 of 2</div>
+      </div>
+      <!--Custom width sidebar and main section-->
+      <div class="block">
+        <div class="main col">This is the main section</div>
+        <div class="sidebar col">This is the sidebar</div>
+      </div>
+      <!--
+      When using this in a project customize it by renaming all ids and associated co-relations.
+       This can be achieved by replacing all 'tabsid' with your particular tabs id. Please make sure to do this
+      -->
+      <div class="tab-acc-min tabs tab-block js-tab-block">
+        <h1>Minimally accessible tab block</h1>
+        <ul id="tabsid-list-id" role="tablist" class="block tab-list">
+          <li><a id="tabsid-tab-1" href="#tabsid-content-1" role="tab" aria-controls="tabsid-content-1" aria-selected="true" data-tab="#tabsid-content-1" class="tab tab-selected">Tab 1</a></li>
+          <li><a id="tabsid-tab-2" href="#tabsid-content-2" role="tab" aria-controls="tabsid-content-2" aria-selected="false" data-tab="#tabsid-content-2" class="tab">Tab 2</a></li>
+          <li><a id="tabsid-tab-3" href="#tabsid-content-3" role="tab" aria-controls="tabsid-content-3" aria-selected="false" data-tab="#tabsid-content-3" class="tab">Tab 3</a></li>
+        </ul>
+        <div id="tabsid-content-1" aria-labelledby="tabsid-tab-1" role="tabpanel" tabindex="0" aria-hidden="false" class="tab-content tab-content-selected">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div id="tabsid-content-2" aria-labelledby="tabsid-tab-2" role="tabpanel" tabindex="0" aria-hidden="true" class="tab-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+        <div id="tabsid-content-3" aria-labelledby="tabsid-tab-3" role="tabpanel" tabindex="0" aria-hidden="true" class="tab-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" tabindex="0" class="footer block">
+    <div class="container">
+      <div class="col footer-links"><a href="#">Home</a><a href="#">Collections</a><a href="#">Publication</a><a href="#">About</a><a href="#">My account</a><a href="#">Terms &nbsp; conditions</a><a href="#">Privacy policy</a><a href="#">Copyright &amp; permissions</a></div>
+      <div class="col footer-info">
+        <div class="block"><a href="#"><img src="http://placehold.it/40x80" alt="logo"><span class="small-text">Jurist- og Okonomforbundets<br>Forlag</span></a><a href="#"><img src="http://placehold.it/40x80" alt="logo"><span class="small-text">Handelshojskolens<br>Forlag</span></a><a href="#"><img src="http://placehold.it/100x100" alt="logo"></a>
+          <div class="social-media-links social-media-tags"><strong class="title">Join my network:</strong><a href="https://twitter.com/arathi_m_s" title="View my Twitter account" target="_blank"><i class="icon-twitter icon icon-big"><span class="visuallyhidden">View my twitter account</span></i></a><a href="http://uk.linkedin.com/pub/arathi-sreekumar/56/aa5/3a8" title="View my profile on LinkedIn" target="_blank"><i class="icon-linkedin icon icon-big"><span class="visuallyhidden">View my profile on LinkedIn</span></i></a><a href="https://github.com/arathi-sreekumar" title="View my github account" target="_blank"><i class="icon-github-sign icon icon-big"><span class="visuallyhidden">View my github account</span></i></a><a href="http://beknown.com/arathi-sreekumar" title="View my profile at Monster.co.uk" target="_blank"><i class="icon-monster icon icon-big"><span class="visuallyhidden">View my account at monster.co.uk</span></i></a></div>
+          <div class="company-info block">
+            <div class="address">Djof Publisher <sup>*  </sup>Gothersgade 137 <sup>*  </sup>123 Copenhagen K<br>+45 39 13 55 00<sup>*</sup>forlag@djoef.dk<sup>*</sup>www.djoef-forlag.dk</div><img src="http://placehold.it/100x100" alt="logo" class="company-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/plugins.js"></script>
+  <script src="js/compiled/compiled.min.js"></script>
+</body></html>

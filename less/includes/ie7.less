@@ -1,0 +1,173 @@
+/* IE7 calculations */
+@col-full-ie7: 100% - (2 * @padding);
+@sidebar-ie7:@sidebar - (@col-spacing/2);
+@main-ie7: 100 - @sidebar - (@col-spacing/2);
+@col-1by2-ie7: (100% - @col-spacing) / 2;
+@col-1by3-ie7: (100%  - (@col-spacing * 2)) / 3;
+@col-2by3-ie7: 2 * @col-1by3-ie7 + @col-spacing;
+@col-1by4-ie7: (100% - (@col-spacing * 3)) / 4;
+@col-3by4-ie7: 3 * @col-1by4-ie7 + (2 * @col-spacing);
+@col-1by5-ie7: (100% - (@col-spacing * 4)) / 5;
+@col-2by5-ie7: 2 * @col-1by5-ie7 + @col-spacing;
+@col-3by5-ie7: 3 * @col-1by5-ie7 + (2 * @col-spacing);
+@col-4by5-ie7: 4 * @col-1by5-ie7 + (3 * @col-spacing);
+
+/* IE7 HACKS */
+.ie7 {
+    body {
+        text-align: center;
+    }
+
+    .container {
+        text-align: left;
+        width: @site-width-ie7;
+    }
+
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+/* ================== IE GRID CSS ================== */
+    /* TWO COLUMN VARIABLE WIDTH LAYOUT  */
+    .sidebar {
+        width: @sidebar-ie7 - 0.1%;
+    }
+
+    .main {
+        width: @main-ie7 - 0.1%;
+    }
+
+    .padded {
+        .sidebar {
+            width: @sidebar-ie7 - (2 * @padding) - 0.1%;
+        }
+        .main {
+            width: @main-ie7 - (2 * @padding) - 0.1%;
+        }
+    }
+    /*  END TWO COLUMN VARIABLE WIDTH LAYOUT  */
+
+    /* GRID OF ONE */
+    .col-full {
+        width: @col-full-ie7;
+    }
+
+    /*  GRID OF TWO  */
+    .col-1by2 {
+        width: @col-1by2-ie7;
+    }
+
+    .padded .col-1by2 {
+        width: @col-1by2-ie7 - (2 * @padding);
+    }
+
+    /*  GRID OF THREE  */
+    .col-2by3 {
+        width:  @col-2by3-ie7;
+    }
+    .col-1by3 {
+        width: @col-1by3-ie7;
+    }
+
+    .padded {
+        .col-2by3 {
+            width:  @col-2by3-ie7 - (2 * @padding);
+        }
+        .col-1by3 {
+            width: @col-1by3-ie7 - (2 * @padding);
+        }
+    }
+
+    /*  GRID OF FOUR  */
+    .col-3by4 {
+        width: @col-3by4-ie7;
+    }
+    .col-1by4 {
+        width: @col-1by4-ie7;
+    }
+
+    .padded {
+        .col-3by4 {
+            width: @col-3by4-ie7 - (2 * @padding);
+        }
+        .col-1by4 {
+            width: @col-1by4-ie7 - (2 * @padding);
+        }
+    }
+
+    /* GRID OF FIVE */
+    .col-1by5 {
+        width: @col-1by5-ie7;
+    }
+    .col-2by5 {
+        width: @col-2by5-ie7;
+    }
+    .col-3by5 {
+        width: @col-3by5-ie7;
+    }
+    .col-4by5 {
+        width: @col-4by5-ie7;
+    }
+
+    .padded {
+        .col-1by5 {
+            width: @col-1by5-ie7 - (2 * @padding);
+        }
+        .col-2by5 {
+            width: @col-2by5-ie7 - (2 * @padding);
+        }
+        .col-3by5 {
+            width: @col-3by5-ie7 - (2 * @padding);
+        }
+        .col-4by5 {
+            width: @col-4by5-ie7 - (2 * @padding);
+        }
+    }
+
+    .padded .col {
+        padding: @padding;
+    }
+
+    /* Navigation grids */
+    .nav-1 {
+        .nav-item {
+            width: 19.95%;
+        }
+    }
+    .nav-2 {
+        .nav-main {
+            width: 100 - @sidebar - 0.1;
+        }
+    }
+
+    .header {
+        .col {
+            float: left;
+            display: block;
+            padding: 0;
+        }
+    }
+
+    .footer {
+        .col {
+            float: left;
+            display: block;
+            vertical-align: middle;
+        }
+        .footer-links {
+            width: 25%;
+        }
+        .footer-info {
+            float: right;
+            width: 70%;
+        }
+    }
+    .social-media-links,
+    .social-media-share {
+        display: inline;
+    }
+
+}
+/* END IE7 HACKS */

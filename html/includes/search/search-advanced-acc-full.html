@@ -1,0 +1,87 @@
+
+<div class="adv-search js-adv-search hide">
+  <!--Move this tab use info id to a generic location common for all tabs in a page. Make sure there are no multiple instances of this paragraph 
+  -->
+  <p id="tab-use-info" class="visuallyhidden">Use right/left arrow keys to navigate between tabs. Press tab key to go to the tab content.</p>
+  <ul id="adv-search-tabs" aria-role="tablist" class="block tab-list adv-search-tabs">
+    <li><a id="words-tab" href="#words" data-tab="#words" role="tab" aria-controls="words" aria-selected="true" aria-describedby="tab-use-info" class="tab tab-selected">Full text</a></li>
+    <li><a id="author-tab" href="#author" data-tab="#author" role="tab" aria-controls="author" aria-selected="false" aria-describedby="tab-use-info" class="tab">Author</a></li>
+    <li><a id="affiliation-tab" href="#affiliation" data-tab="#affiliation" role="tab" aria-controls="affiliation" aria-selected="false" aria-describedby="tab-use-info" class="tab">Company/Institution</a></li>
+    <li><a id="publisher-tab" href="#publisher" data-tab="#publisher" role="tab" aria-controls="publisher" aria-selected="false" aria-describedby="tab-use-info" class="tab">Publisher</a></li>
+    <li><a id="journal-tab" href="#journal" data-tab="#journal" role="tab" aria-controls="journal" aria-selected="false" aria-describedby="tab-use-info" class="tab">Journal</a></li>
+    <li><a id="conference-tab" href="#conference" data-tab="#conference" role="tab" aria-controls="conference" aria-selected="false" aria-describedby="tab-use-info" class="tab">Conference</a></li>
+  </ul>
+  <div id="words" aria-labelledby="words-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content tab-content-selected">
+    <div class="select">
+      <select class="sub-tabs select-element">
+        <option value="exact">Exact phrase</option>
+        <option value="without">Without</option>
+      </select>
+    </div>
+    <form data-id="exact" data-fieldname="author" data-template="&quot;#exact&quot;" class="search-field active">
+      <input name="exact" required="required" class="search-input"/>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+    <form data-id="without" data-fieldname="author" data-template="-&quot;#without&quot;" class="search-field">
+      <input name="without" required="required" class="search-input"/>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+  <div id="author" aria-labelledby="author-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content">
+    <form data-id="author" data-fieldname="author" data-template="#fieldname:&quot;#author&quot;" class="search-field active">
+      <input name="author" required="required" class="search-input"/>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+  <div id="affiliation" aria-labelledby="affiliation-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content">
+    <form data-id="affiliation" data-fieldname="affiliation" data-template="#fieldname:&quot;#affiliation&quot;" class="search-field active">
+      <input name="affiliation" required="required" class="search-input"/>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+  <div id="publisher" aria-labelledby="publisher-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content">
+    <form data-id="dc_publisher_facet" data-fieldname="publisher" data-template="#fieldname:&quot;#dc_publisher_facet&quot;" class="search-field active">
+      <select name="dc_publisher_facet" class="select-element">
+        <!--
+        <#if top['dc_publisher_facet']??>
+                           <#list top['dc_publisher_facet'] as pub>
+                               <option>${pub.name}</option>
+                           </#list>
+        </#if> 
+        -->
+        <option>Publisher options</option>
+      </select>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+  <div id="journal" aria-labelledby="journal-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content">
+    <form data-id="journal" data-fieldname="journal" data-template="#fieldname:&quot;#journal&quot;" class="search-field active">
+      <select name="journal" class="select-element">
+        <!--
+        <#if top['journal_name']??>
+                           <#list top['journal_name'] as journal>
+                               <option>${journal.name}</option>
+                           </#list>
+        </#if> 
+        -->
+        <option>Journal options</option>
+      </select>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+  <div id="conference" aria-labelledby="conference-tab" role="tabpanel" tabindex="0" aria-hidden="false" class="adv-search-tab tab-content">
+    <form data-id="journal" data-fieldname="conference" data-template="#fieldname:&quot;#journal&quot;" class="search-field active">
+      <select name="journal" class="select-element">
+        <!--
+        <#if top['meeting_name']??>
+                           <#list top['meeting_name'] as conference>
+                               <option>${conference.name}</option>
+                           </#list>
+        </#if> 
+        -->
+        <option>conference options</option>
+      </select>
+      <button type="submit" class="btn btn-main btn-wide">Add</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+
+<!--
+When using this in a project customize it by renaming all ids and associated co-relations.
+ This can be achieved by replacing all 'tabsid' with your particular tabs id. Please make sure to do this
+-->
+<div class="tab-acc-full tabs tab-block js-tab-block">
+  <h1>Fully accessible tab block</h1>
+  <!--Move this tab use info id to a generic location common for all tabs in a page. Make sure there are no multiple instances of this paragraph
+  -->
+  <p id="tab-use-info" class="visuallyhidden">Use right/left arrow keys to navigate between tabs. Press tab key to go to the tab content.</p>
+  <ul id="tabsid-list-id" role="tablist" class="block tab-list">
+    <li><a id="tabsid-tab-1" href="#tabsid-content-1" role="tab" aria-controls="tabsid-content-1" aria-selected="true" aria-describedby="tab-use-info" data-tab="#tabsid-content-1" class="tab tab-selected">Tab 1</a></li>
+    <li><a id="tabsid-tab-2" href="#tabsid-content-2" role="tab" aria-controls="tabsid-content-2" aria-selected="false" aria-describedby="tab-use-info" data-tab="#tabsid-content-2" class="tab">Tab 2</a></li>
+    <li><a id="tabsid-tab-3" href="#tabsid-content-3" role="tab" aria-controls="tabsid-content-3" aria-selected="false" aria-describedby="tab-use-info" data-tab="#tabsid-content-3" class="tab">Tab 3</a></li>
+  </ul>
+  <div id="tabsid-content-1" aria-labelledby="tabsid-tab-1" role="tabpanel" tabindex="0" aria-hidden="false" class="tab-content tab-content-selected">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  <div id="tabsid-content-2" aria-labelledby="tabsid-tab-2" role="tabpanel" tabindex="0" aria-hidden="true" class="tab-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+  <div id="tabsid-content-3" aria-labelledby="tabsid-tab-3" role="tabpanel" tabindex="0" aria-hidden="true" class="tab-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</div>
+</div>

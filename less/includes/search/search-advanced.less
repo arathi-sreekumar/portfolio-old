@@ -1,0 +1,66 @@
+/* =============== ADVANCED SEARCH BLOCK =============== */
+.adv-search {
+    background-color: #F3F5F5;
+    padding: 0 20px;
+    &.show {
+        min-height: 100px;
+        max-height: 350px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #CCC;
+        padding: 20px;
+    }
+    .search-input {
+        width: 75%;
+    }
+
+    .adv-search-tab {
+        form {
+            width: 100%;
+        }
+
+        .select {
+            display: inline-block;
+        }
+        .search-field {
+            display: none;
+            position: relative;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+    }
+
+    .adv-search-link {
+        padding-right: 25px;
+    }
+
+    #words {
+        form {
+            width: 73%;
+        }
+        .search-input {
+            width: 100%;
+            max-width: 74%;
+            margin: 0 0 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .adv-search {
+        .adv-search-tabs {
+            li {
+                float: none;
+
+                a {
+                    display: block;
+                    border-top: 1px solid #CCC;
+                }
+                &:first-child a{
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}

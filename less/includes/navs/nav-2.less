@@ -1,0 +1,108 @@
+/* =============== NAV styling ================= */
+.nav-border {
+    border: 0;
+    border-top: 5px solid @nav-border-color;
+    border-bottom: 5px solid @nav-border-color;
+    border-image: url('../img/nav-border.png') 7 repeat;
+    background-color: transparent;
+    margin-top: -5px;
+}
+.nav {
+    background-color: @nav-bg;
+    display: block;
+
+    .container {
+        border-right: 1px solid @nav-border-color;
+        border-left: 1px solid @nav-border-color;
+        margin: 0 auto;
+    }
+}
+
+.nav-item {
+    display: block;
+    float: left;
+    .border-box();
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    a {
+        display: block;
+        padding: 8px 0;
+        color: @nav-text;
+        border-left: 1px dashed @nav-border-color;
+
+        &:hover {
+            background-color: @nav-bg-hover;
+            color: @nav-text-hover;
+        }
+    }
+
+    &:first-child {
+        > a {
+            border-left: 0;
+        }
+    }
+
+    .tab-selected, .tab-selected:hover {
+        background-color: @nav-bg-selected;
+        color: @nav-text-selected;
+        cursor: default;
+    }
+
+    .nav-sub-link {
+        display: inline-block;
+    }
+}
+.nav-main {
+    width: 100%;
+    .nav-item {
+        width: 18.2%;
+    }
+    .last {
+        border-right: 1px dashed @nav-border-color;
+    }
+
+
+    .nav-sp-side {
+        width: @sidebar;
+    }
+}
+
+.nav-sp-side {
+    border-left: 1px dashed @nav-border-color;
+    color: @nav-text;
+    float: right;
+
+    &:hover {
+        background-color: @nav-bg-hover;
+        color: @nav-text-hover;
+    }
+
+    a {
+        border: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-item {
+        display: block;
+        width: 100%;
+    }
+    .nav-sub {
+        border-top: 1px solid @nav-border-color;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-item,
+    .nav-main .nav-item {
+        display: block;
+        width: 100%;
+        float: none;
+        &:first-child {
+            border-top: 0;
+        }
+        border-top: 1px solid @nav-border-color;
+    }
+}
